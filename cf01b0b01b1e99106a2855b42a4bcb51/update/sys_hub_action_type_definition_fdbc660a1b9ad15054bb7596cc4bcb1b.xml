@@ -1,0 +1,1643 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation>Gets information about a specific release by Release ID. Search for a release to get it's ID first.</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Database">744845b11b9e115054bb7596cc4bcb36</category>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Retrieves information about a specific release in the Discogs Database</description>
+        <ih_action>false</ih_action>
+        <internal_name>get_release</internal_name>
+        <label_cache>[{"name":"{{action.query}}","label":"action➛Query","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.type}}","label":"action➛Type","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Release","value":"release","order":1},{"label":"Master Release","value":"master","order":2},{"label":"Artist","value":"artist","order":3},{"label":"Label","value":"label","order":4}],"attributes":{}},{"name":"{{action.title}}","label":"action➛Title","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.release_title}}","label":"action➛Release Title","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.artist}}","label":"action➛Artist","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.country}}","label":"action➛Country","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.year}}","label":"action➛Year","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.release_id}}","label":"action➛Release ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.currency_abbreviation}}","label":"action➛Currency Abbreviation","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.curr_abbr}}","label":"action➛Currency Abbreviation","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Label1","value":"value1","order":1},{"label":"Label2","value":"value2","order":2},{"label":"Label3","value":"value3","order":3},{"label":"Label4","value":"value4","order":4},{"label":"Label5","value":"value5","order":5},{"label":"Label6","value":"value6","order":6},{"label":"Label7","value":"value7","order":7},{"label":"Label8","value":"value8","order":8},{"label":"Label9","value":"value9","order":9}],"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"c0ccef81-7545-4c13-be8e-11b42d912598","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"{{step[498002fd-0f03-471d-99e3-43593eadfa0e].sn_auth_token}}","label":"step➛REST step➛Credential Value","type":"step","ref":"","reference_display":"","base_type":"password2","parent_table_name":"","column_name":"","choices":null,"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"password2","isLocal":"true"}},{"name":"{{step[1d20aa54-5ea4-4b6e-8908-392189030449].sn_auth_token}}","label":"step➛REST step➛Credential Value","type":"step","ref":"","reference_display":"","base_type":"password2","parent_table_name":"","column_name":"","choices":null,"attributes":{"isLocal":"true"}},{"name":"{{step[1d20aa54-5ea4-4b6e-8908-392189030449].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[25ce2df3-926a-4594-8b14-2510dfa5259a].root}}","label":"step➛JSON Parser step➛Release","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Get Release</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 05:57:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>fdbc660a1b9ad15054bb7596cc4bcb1b</sys_id>
+        <sys_name>Get Release</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Discogs Spoke" source="x_snc_discogs_spok">cf01b0b01b1e99106a2855b42a4bcb51</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discogs Spoke">cf01b0b01b1e99106a2855b42a4bcb51</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_fdbc660a1b9ad15054bb7596cc4bcb1b</sys_update_name>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=fdbc660a1b9ad15054bb7596cc4bcb1b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=fdbc660a1b9ad15054bb7596cc4bcb1b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>fdbc660a1b9ad15054bb7596cc4bcb1b</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>3a3ee28e1b9ad15054bb7596cc4bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">fa3ee28e1b9ad15054bb7596cc4bcb70</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>fdbc660a1b9ad15054bb7596cc4bcb1b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>fa3ee28e1b9ad15054bb7596cc4bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}}}</value>
+        <variable display_value="Action Status">fa3ee28e1b9ad15054bb7596cc4bcb6b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fdbc660a1b9ad15054bb7596cc4bcb1b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>release</field>
+        <id>fdbc660a1b9ad15054bb7596cc4bcb1b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:12:24</sys_created_on>
+        <sys_id>610032821bdad15054bb7596cc4bcb7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:12:24</sys_updated_on>
+        <table>var__m_sys_hub_action_output_fdbc660a1b9ad15054bb7596cc4bcb1b</table>
+        <value>{{step[25ce2df3-926a-4594-8b14-2510dfa5259a].root}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>fdbc660a1b9ad15054bb7596cc4bcb1b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>b63ee28e1b9ad15054bb7596cc4bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_fdbc660a1b9ad15054bb7596cc4bcb1b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>fdbc660a1b9ad15054bb7596cc4bcb1b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>f23ee28e1b9ad15054bb7596cc4bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_fdbc660a1b9ad15054bb7596cc4bcb1b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=fdbc660a1b9ad15054bb7596cc4bcb1b^sys_idNOT IN223ea28e1b9ad15054bb7596cc4bcbf6,a8efaa421bdad15054bb7596cc4bcb95"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Release">fdbc660a1b9ad15054bb7596cc4bcb1b</action>
+        <cid>1d20aa54-5ea4-4b6e-8908-392189030449</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:33</sys_created_on>
+        <sys_id>223ea28e1b9ad15054bb7596cc4bcbf6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discogs Spoke">cf01b0b01b1e99106a2855b42a4bcb51</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:11:48</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=223ea28e1b9ad15054bb7596cc4bcbf6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>223ea28e1b9ad15054bb7596cc4bcbf6</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>263ee28e1b9ad15054bb7596cc4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>223ea28e1b9ad15054bb7596cc4bcbf6</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>2a3ee28e1b9ad15054bb7596cc4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <value>f9a4683d1b5a115054bb7596cc4bcb7b</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>223ea28e1b9ad15054bb7596cc4bcbf6</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>623ee28e1b9ad15054bb7596cc4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <value>https://api.discogs.com/</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>223ea28e1b9ad15054bb7596cc4bcbf6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>663ee28e1b9ad15054bb7596cc4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>223ea28e1b9ad15054bb7596cc4bcbf6</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>a23ee28e1b9ad15054bb7596cc4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>223ea28e1b9ad15054bb7596cc4bcbf6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>aa3ee28e1b9ad15054bb7596cc4bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>223ea28e1b9ad15054bb7596cc4bcbf6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>aa3ee28e1b9ad15054bb7596cc4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>223ea28e1b9ad15054bb7596cc4bcbf6</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>ae3ee28e1b9ad15054bb7596cc4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>223ea28e1b9ad15054bb7596cc4bcbf6</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>e63ee28e1b9ad15054bb7596cc4bcb66</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:11:48</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>223ea28e1b9ad15054bb7596cc4bcbf6</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>ea3ee28e1b9ad15054bb7596cc4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_223ea28e1b9ad15054bb7596cc4bcbf6^id=223ea28e1b9ad15054bb7596cc4bcbf6"/>
+    <sys_element_mapping action="delete_multiple" query="id=223ea28e1b9ad15054bb7596cc4bcbf6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>223ea28e1b9ad15054bb7596cc4bcbf6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>a23ee28e1b9ad15054bb7596cc4bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>223ea28e1b9ad15054bb7596cc4bcbf6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>ee3ee28e1b9ad15054bb7596cc4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>223ea28e1b9ad15054bb7596cc4bcbf6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>2e3ee28e1b9ad15054bb7596cc4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>223ea28e1b9ad15054bb7596cc4bcbf6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>e23ee28e1b9ad15054bb7596cc4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>223ea28e1b9ad15054bb7596cc4bcbf6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>2a3ee28e1b9ad15054bb7596cc4bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>223ea28e1b9ad15054bb7596cc4bcbf6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>6a3ee28e1b9ad15054bb7596cc4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"Authorization﻿","value":"Discogs token={{step[1d20aa54-5ea4-4b6e-8908-392189030449].sn_auth_token}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>223ea28e1b9ad15054bb7596cc4bcbf6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>a63ee28e1b9ad15054bb7596cc4bcb62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>223ea28e1b9ad15054bb7596cc4bcbf6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>223ee28e1b9ad15054bb7596cc4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>223ea28e1b9ad15054bb7596cc4bcbf6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>663ee28e1b9ad15054bb7596cc4bcb64</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:11:48</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>223ea28e1b9ad15054bb7596cc4bcbf6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>a63ee28e1b9ad15054bb7596cc4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>/releases/{{action.release_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>223ea28e1b9ad15054bb7596cc4bcbf6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>6e3ee28e1b9ad15054bb7596cc4bcb62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=223ea28e1b9ad15054bb7596cc4bcbf6"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=223ea28e1b9ad15054bb7596cc4bcbf6^sys_idNOT IN2a3ee28e1b9ad15054bb7596cc4bcb3e"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=51c9faa9-bdc1-41b4-87bd-3386af7f08a3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">223ea28e1b9ad15054bb7596cc4bcbf6</model>
+        <model_id>223ea28e1b9ad15054bb7596cc4bcbf6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_223ea28e1b9ad15054bb7596cc4bcbf6</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>2a3ee28e1b9ad15054bb7596cc4bcb3e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discogs Spoke">cf01b0b01b1e99106a2855b42a4bcb51</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:11:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=223ea28e1b9ad15054bb7596cc4bcbf6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_223ea28e1b9ad15054bb7596cc4bcbf6^sys_idNOT IN663ee28e1b9ad15054bb7596cc4bcb42"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_223ea28e1b9ad15054bb7596cc4bcbf6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>663ee28e1b9ad15054bb7596cc4bcb42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discogs Spoke" source="x_snc_discogs_spok">cf01b0b01b1e99106a2855b42a4bcb51</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discogs Spoke">cf01b0b01b1e99106a2855b42a4bcb51</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Release">fdbc660a1b9ad15054bb7596cc4bcb1b</action>
+        <cid>25ce2df3-926a-4594-8b14-2510dfa5259a</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:11:48</sys_created_on>
+        <sys_id>a8efaa421bdad15054bb7596cc4bcb95</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discogs Spoke">cf01b0b01b1e99106a2855b42a4bcb51</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:11:48</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a8efaa421bdad15054bb7596cc4bcb95"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a8efaa421bdad15054bb7596cc4bcb95</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:11:48</sys_created_on>
+        <sys_id>f0efea421bdad15054bb7596cc4bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:11:48</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"title","children":[],"type":"string","jpath":"$.title","previewValue":"Never Gonna Give You Up"},{"name":"id","children":[],"type":"string","jpath":"$.id","previewValue":"249504"},{"name":"artists","children":[{"name":"artists_object","children":[{"name":"anv","children":[],"type":"string","jpath":"$.artists[*].anv","previewValue":""},{"name":"id","children":[],"type":"string","jpath":"$.artists[*].id","previewValue":"72872"},{"name":"join","children":[],"type":"string","jpath":"$.artists[*].join","previewValue":""},{"name":"name","children":[],"type":"string","jpath":"$.artists[*].name","previewValue":"Rick Astley"},{"name":"resource_url","children":[],"type":"string","jpath":"$.artists[*].resource_url","previewValue":"https://api.discogs.com/artists/72872"},{"name":"role","children":[],"type":"string","jpath":"$.artists[*].role","previewValue":""},{"name":"tracks","children":[],"type":"string","jpath":"$.artists[*].tracks","previewValue":""}],"type":"object","jpath":"$.artists[*]","previewValue":""}],"type":"array.object","jpath":"$.artists[*]","previewValue":""},{"name":"data_quality","children":[],"type":"string","jpath":"$.data_quality","previewValue":"Correct"},{"name":"thumb","children":[],"type":"string","jpath":"$.thumb","previewValue":"https://api-img.discogs.com/kAXVhuZuh_uat5NNr50zMjN7lho=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-249504-1334592212.jpeg.jpg"},{"name":"community","children":[{"name":"contributors","children":[{"name":"contributors_object","children":[{"name":"resource_url","children":[],"type":"string","jpath":"$.community.contributors[*].resource_url","previewValue":"https://api.discogs.com/users/memory"},{"name":"username","children":[],"type":"string","jpath":"$.community.contributors[*].username","previewValue":"memory"}],"type":"object","jpath":"$.community.contributors[*]","previewValue":""}],"type":"array.object","jpath":"$.community.contributors[*]","previewValue":""},{"name":"data_quality","children":[],"type":"string","jpath":"$.community.data_quality","previewValue":"Correct"},{"name":"have","children":[],"type":"string","jpath":"$.community.have","previewValue":"252"},{"name":"rating","children":[{"name":"average","children":[],"type":"string","jpath":"$.community.rating.average","previewValue":"3.42"},{"name":"count","children":[],"type":"string","jpath":"$.community.rating.count","previewValue":"45"}],"type":"object","jpath":"$.community.rating","previewValue":""},{"name":"status","children":[],"type":"string","jpath":"$.community.status","previewValue":"Accepted"},{"name":"submitter","children":[{"name":"resource_url","children":[],"type":"string","jpath":"$.community.submitter.resource_url","previewValue":"https://api.discogs.com/users/memory"},{"name":"username","children":[],"type":"string","jpath":"$.community.submitter.username","previewValue":"memory"}],"type":"object","jpath":"$.community.submitter","previewValue":""},{"name":"want","children":[],"type":"string","jpath":"$.community.want","previewValue":"42"}],"type":"object","jpath":"$.community","previewValue":""},{"name":"companies","children":[{"name":"companies_object","children":[{"name":"catno","children":[],"type":"string","jpath":"$.companies[*].catno","previewValue":""},{"name":"entity_type","children":[],"type":"string","jpath":"$.companies[*].entity_type","previewValue":"13"},{"name":"entity_type_name","children":[],"type":"string","jpath":"$.companies[*].entity_type_name","previewValue":"Phonographic Copyright (p)"},{"name":"id","children":[],"type":"string","jpath":"$.companies[*].id","previewValue":"82835"},{"name":"name","children":[],"type":"string","jpath":"$.companies[*].name","previewValue":"BMG Records (UK) Ltd."},{"name":"resource_url","children":[],"type":"string","jpath":"$.companies[*].resource_url","previewValue":"https://api.discogs.com/labels/82835"}],"type":"object","jpath":"$.companies[*]","previewValue":""}],"type":"array.object","jpath":"$.companies[*]","previewValue":""},{"name":"country","children":[],"type":"string","jpath":"$.country","previewValue":"UK"},{"name":"date_added","children":[],"type":"string","jpath":"$.date_added","previewValue":"2004-04-30T08:10:05-07:00"},{"name":"date_changed","children":[],"type":"string","jpath":"$.date_changed","previewValue":"2012-12-03T02:50:12-07:00"},{"name":"estimated_weight","children":[],"type":"string","jpath":"$.estimated_weight","previewValue":"60"},{"name":"extraartists","children":[{"name":"extraartists_object","children":[{"name":"anv","children":[],"type":"string","jpath":"$.extraartists[*].anv","previewValue":"Me Co"},{"name":"id","children":[],"type":"string","jpath":"$.extraartists[*].id","previewValue":"547352"},{"name":"join","children":[],"type":"string","jpath":"$.extraartists[*].join","previewValue":""},{"name":"name","children":[],"type":"string","jpath":"$.extraartists[*].name","previewValue":"Me Company"},{"name":"resource_url","children":[],"type":"string","jpath":"$.extraartists[*].resource_url","previewValue":"https://api.discogs.com/artists/547352"},{"name":"role","children":[],"type":"string","jpath":"$.extraartists[*].role","previewValue":"Design"},{"name":"tracks","children":[],"type":"string","jpath":"$.extraartists[*].tracks","previewValue":""}],"type":"object","jpath":"$.extraartists[*]","previewValue":""}],"type":"array.object","jpath":"$.extraartists[*]","previewValue":""},{"name":"format_quantity","children":[],"type":"string","jpath":"$.format_quantity","previewValue":"1"},{"name":"formats","children":[{"name":"formats_object","children":[{"name":"descriptions","children":[{"name":"descriptions_string","children":[],"type":"string","jpath":"$.formats[*].descriptions[*]","previewValue":"7\\\""}],"type":"array.string","jpath":"$.formats[*].descriptions[*]","previewValue":""},{"name":"name","children":[],"type":"string","jpath":"$.formats[*].name","previewValue":"Vinyl"},{"name":"qty","children":[],"type":"string","jpath":"$.formats[*].qty","previewValue":"1"}],"type":"object","jpath":"$.formats[*]","previewValue":""}],"type":"array.object","jpath":"$.formats[*]","previewValue":""},{"name":"genres","children":[{"name":"genres_string","children":[],"type":"string","jpath":"$.genres[*]","previewValue":"Electronic"}],"type":"array.string","jpath":"$.genres[*]","previewValue":""},{"name":"identifiers","children":[{"name":"identifiers_object","children":[{"name":"type","children":[],"type":"string","jpath":"$.identifiers[*].type","previewValue":"Barcode"},{"name":"value","children":[],"type":"string","jpath":"$.identifiers[*].value","previewValue":"5012394144777"}],"type":"object","jpath":"$.identifiers[*]","previewValue":""}],"type":"array.object","jpath":"$.identifiers[*]","previewValue":""},{"name":"images","children":[{"name":"images_object","children":[{"name":"height","children":[],"type":"string","jpath":"$.images[*].height","previewValue":"600"},{"name":"resource_url","children":[],"type":"string","jpath":"$.images[*].resource_url","previewValue":"https://api-img.discogs.com/z_u8yqxvDcwVnR4tX2HLNLaQO2Y=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(96)/discogs-images/R-249504-1334592212.jpeg.jpg"},{"name":"type","children":[],"type":"string","jpath":"$.images[*].type","previewValue":"primary"},{"name":"uri","children":[],"type":"string","jpath":"$.images[*].uri","previewValue":"https://api-img.discogs.com/z_u8yqxvDcwVnR4tX2HLNLaQO2Y=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(96)/discogs-images/R-249504-1334592212.jpeg.jpg"},{"name":"uri150","children":[],"type":"string","jpath":"$.images[*].uri150","previewValue":"https://api-img.discogs.com/0ZYgPR4X2HdUKA_jkhPJF4SN5mM=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-249504-1334592212.jpeg.jpg"},{"name":"width","children":[],"type":"string","jpath":"$.images[*].width","previewValue":"600"}],"type":"object","jpath":"$.images[*]","previewValue":""}],"type":"array.object","jpath":"$.images[*]","previewValue":""},{"name":"labels","children":[{"name":"labels_object","children":[{"name":"catno","children":[],"type":"string","jpath":"$.labels[*].catno","previewValue":"PB 41447"},{"name":"entity_type","children":[],"type":"string","jpath":"$.labels[*].entity_type","previewValue":"1"},{"name":"id","children":[],"type":"string","jpath":"$.labels[*].id","previewValue":"895"},{"name":"name","children":[],"type":"string","jpath":"$.labels[*].name","previewValue":"RCA"},{"name":"resource_url","children":[],"type":"string","jpath":"$.labels[*].resource_url","previewValue":"https://api.discogs.com/labels/895"}],"type":"object","jpath":"$.labels[*]","previewValue":""}],"type":"array.object","jpath":"$.labels[*]","previewValue":""},{"name":"lowest_price","children":[],"type":"string","jpath":"$.lowest_price","previewValue":"0.63"},{"name":"master_id","children":[],"type":"string","jpath":"$.master_id","previewValue":"96559"},{"name":"master_url","children":[],"type":"string","jpath":"$.master_url","previewValue":"https://api.discogs.com/masters/96559"},{"name":"notes","children":[],"type":"string","jpath":"$.notes","previewValue":"UK Release has a black label with the text \"Manufactured In England\" printed on it.\r\n\r\nSleeve:\r\n℗ 1987 • BMG Records (UK) Ltd. © 1987 • BMG Records (UK) Ltd.\r\nDistributed in the UK by BMG Records •  Distribué en Europe par BMG/Ariola • Vertrieb en Europa dürch BMG/Ariola.\r\n\r\nCenter labels:\r\n℗ 1987 Pete Waterman Ltd.\r\nOriginal Sound Recording made by PWL.\r\nBMG Records (UK) Ltd. are the exclusive licensees for the world.\r\n\r\nDurations do not appear on the release.\r\n"},{"name":"num_for_sale","children":[],"type":"string","jpath":"$.num_for_sale","previewValue":"58"},{"name":"released","children":[],"type":"string","jpath":"$.released","previewValue":"1987"},{"name":"released_formatted","children":[],"type":"string","jpath":"$.released_formatted","previewValue":"1987"},{"name":"resource_url","children":[],"type":"string","jpath":"$.resource_url","previewValue":"https://api.discogs.com/releases/249504"},{"name":"series","children":[{"name":"series_string","children":[],"type":"string","jpath":"$.series[*]","previewValue":""}],"type":"array.string","jpath":"$.series[*]","previewValue":""},{"name":"status","children":[],"type":"string","jpath":"$.status","previewValue":"Accepted"},{"name":"styles","children":[{"name":"styles_string","children":[],"type":"string","jpath":"$.styles[*]","previewValue":"Synth-pop"}],"type":"array.string","jpath":"$.styles[*]","previewValue":""},{"name":"tracklist","children":[{"name":"tracklist_object","children":[{"name":"duration","children":[],"type":"string","jpath":"$.tracklist[*].duration","previewValue":"3:32"},{"name":"position","children":[],"type":"string","jpath":"$.tracklist[*].position","previewValue":"A"},{"name":"title","children":[],"type":"string","jpath":"$.tracklist[*].title","previewValue":"Never Gonna Give You Up"},{"name":"type_","children":[],"type":"string","jpath":"$.tracklist[*].type_","previewValue":"track"}],"type":"object","jpath":"$.tracklist[*]","previewValue":""}],"type":"array.object","jpath":"$.tracklist[*]","previewValue":""},{"name":"uri","children":[],"type":"string","jpath":"$.uri","previewValue":"https://www.discogs.com/Rick-Astley-Never-Gonna-Give-You-Up/release/249504"},{"name":"videos","children":[{"name":"videos_object","children":[{"name":"description","children":[],"type":"string","jpath":"$.videos[*].description","previewValue":"Rick Astley - Never Gonna Give You Up (Extended Version)"},{"name":"duration","children":[],"type":"string","jpath":"$.videos[*].duration","previewValue":"330"},{"name":"embed","children":[],"type":"string","jpath":"$.videos[*].embed","previewValue":"true"},{"name":"title","children":[],"type":"string","jpath":"$.videos[*].title","previewValue":"Rick Astley - Never Gonna Give You Up (Extended Version)"},{"name":"uri","children":[],"type":"string","jpath":"$.videos[*].uri","previewValue":"https://www.youtube.com/watch?v=te2jJncBVG4"}],"type":"object","jpath":"$.videos[*]","previewValue":""}],"type":"array.object","jpath":"$.videos[*]","previewValue":""},{"name":"year","children":[],"type":"string","jpath":"$.year","previewValue":"1987"}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a8efaa421bdad15054bb7596cc4bcb95</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:11:48</sys_created_on>
+        <sys_id>f8efea421bdad15054bb7596cc4bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:11:48</sys_updated_on>
+        <value>{&#13;
+	"title": "Never Gonna Give You Up",&#13;
+	"id": 249504,&#13;
+	"artists": [{&#13;
+		"anv": "",&#13;
+		"id": 72872,&#13;
+		"join": "",&#13;
+		"name": "Rick Astley",&#13;
+		"resource_url": "https://api.discogs.com/artists/72872",&#13;
+		"role": "",&#13;
+		"tracks": ""&#13;
+	}],&#13;
+	"data_quality": "Correct",&#13;
+	"thumb": "https://api-img.discogs.com/kAXVhuZuh_uat5NNr50zMjN7lho=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-249504-1334592212.jpeg.jpg",&#13;
+	"community": {&#13;
+		"contributors": [{&#13;
+				"resource_url": "https://api.discogs.com/users/memory",&#13;
+				"username": "memory"&#13;
+			},&#13;
+			{&#13;
+				"resource_url": "https://api.discogs.com/users/_80_",&#13;
+				"username": "_80_"&#13;
+			}&#13;
+		],&#13;
+		"data_quality": "Correct",&#13;
+		"have": 252,&#13;
+		"rating": {&#13;
+			"average": 3.42,&#13;
+			"count": 45&#13;
+		},&#13;
+		"status": "Accepted",&#13;
+		"submitter": {&#13;
+			"resource_url": "https://api.discogs.com/users/memory",&#13;
+			"username": "memory"&#13;
+		},&#13;
+		"want": 42&#13;
+	},&#13;
+	"companies": [{&#13;
+			"catno": "",&#13;
+			"entity_type": "13",&#13;
+			"entity_type_name": "Phonographic Copyright (p)",&#13;
+			"id": 82835,&#13;
+			"name": "BMG Records (UK) Ltd.",&#13;
+			"resource_url": "https://api.discogs.com/labels/82835"&#13;
+		},&#13;
+		{&#13;
+			"catno": "",&#13;
+			"entity_type": "29",&#13;
+			"entity_type_name": "Mastered At",&#13;
+			"id": 266218,&#13;
+			"name": "Utopia Studios",&#13;
+			"resource_url": "https://api.discogs.com/labels/266218"&#13;
+		}&#13;
+	],&#13;
+	"country": "UK",&#13;
+	"date_added": "2004-04-30T08:10:05-07:00",&#13;
+	"date_changed": "2012-12-03T02:50:12-07:00",&#13;
+	"estimated_weight": 60,&#13;
+	"extraartists": [{&#13;
+			"anv": "Me Co",&#13;
+			"id": 547352,&#13;
+			"join": "",&#13;
+			"name": "Me Company",&#13;
+			"resource_url": "https://api.discogs.com/artists/547352",&#13;
+			"role": "Design",&#13;
+			"tracks": ""&#13;
+		},&#13;
+		{&#13;
+			"anv": "Stock / Aitken / Waterman",&#13;
+			"id": 20942,&#13;
+			"join": "",&#13;
+			"name": "Stock, Aitken &amp; Waterman",&#13;
+			"resource_url": "https://api.discogs.com/artists/20942",&#13;
+			"role": "Producer, Written-By",&#13;
+			"tracks": ""&#13;
+		}&#13;
+	],&#13;
+	"format_quantity": 1,&#13;
+	"formats": [{&#13;
+		"descriptions": [&#13;
+			"7\"",&#13;
+			"Single",&#13;
+			"45 RPM"&#13;
+		],&#13;
+		"name": "Vinyl",&#13;
+		"qty": "1"&#13;
+	}],&#13;
+	"genres": [&#13;
+		"Electronic",&#13;
+		"Pop"&#13;
+	],&#13;
+	"identifiers": [{&#13;
+		"type": "Barcode",&#13;
+		"value": "5012394144777"&#13;
+	}],&#13;
+	"images": [{&#13;
+			"height": 600,&#13;
+			"resource_url": "https://api-img.discogs.com/z_u8yqxvDcwVnR4tX2HLNLaQO2Y=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(96)/discogs-images/R-249504-1334592212.jpeg.jpg",&#13;
+			"type": "primary",&#13;
+			"uri": "https://api-img.discogs.com/z_u8yqxvDcwVnR4tX2HLNLaQO2Y=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(96)/discogs-images/R-249504-1334592212.jpeg.jpg",&#13;
+			"uri150": "https://api-img.discogs.com/0ZYgPR4X2HdUKA_jkhPJF4SN5mM=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-249504-1334592212.jpeg.jpg",&#13;
+			"width": 600&#13;
+		},&#13;
+		{&#13;
+			"height": 600,&#13;
+			"resource_url": "https://api-img.discogs.com/EnQXaDOs5T6YI9zq-R5I_mT7hSk=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(96)/discogs-images/R-249504-1334592228.jpeg.jpg",&#13;
+			"type": "secondary",&#13;
+			"uri": "https://api-img.discogs.com/EnQXaDOs5T6YI9zq-R5I_mT7hSk=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(96)/discogs-images/R-249504-1334592228.jpeg.jpg",&#13;
+			"uri150": "https://api-img.discogs.com/abk0FWgWsRDjU4bkCDwk0gyMKBo=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-249504-1334592228.jpeg.jpg",&#13;
+			"width": 600&#13;
+		}&#13;
+	],&#13;
+	"labels": [{&#13;
+		"catno": "PB 41447",&#13;
+		"entity_type": "1",&#13;
+		"id": 895,&#13;
+		"name": "RCA",&#13;
+		"resource_url": "https://api.discogs.com/labels/895"&#13;
+	}],&#13;
+	"lowest_price": 0.63,&#13;
+	"master_id": 96559,&#13;
+	"master_url": "https://api.discogs.com/masters/96559",&#13;
+	"notes": "UK Release has a black label with the text \"Manufactured In England\" printed on it.\r\n\r\nSleeve:\r\n\u2117 1987 \u2022 BMG Records (UK) Ltd. \u00a9 1987 \u2022 BMG Records (UK) Ltd.\r\nDistributed in the UK by BMG Records \u2022  Distribu\u00e9 en Europe par BMG/Ariola \u2022 Vertrieb en Europa d\u00fcrch BMG/Ariola.\r\n\r\nCenter labels:\r\n\u2117 1987 Pete Waterman Ltd.\r\nOriginal Sound Recording made by PWL.\r\nBMG Records (UK) Ltd. are the exclusive licensees for the world.\r\n\r\nDurations do not appear on the release.\r\n",&#13;
+	"num_for_sale": 58,&#13;
+	"released": "1987",&#13;
+	"released_formatted": "1987",&#13;
+	"resource_url": "https://api.discogs.com/releases/249504",&#13;
+	"series": [],&#13;
+	"status": "Accepted",&#13;
+	"styles": [&#13;
+		"Synth-pop"&#13;
+	],&#13;
+	"tracklist": [{&#13;
+			"duration": "3:32",&#13;
+			"position": "A",&#13;
+			"title": "Never Gonna Give You Up",&#13;
+			"type_": "track"&#13;
+		},&#13;
+		{&#13;
+			"duration": "3:30",&#13;
+			"position": "B",&#13;
+			"title": "Never Gonna Give You Up (Instrumental)",&#13;
+			"type_": "track"&#13;
+		}&#13;
+	],&#13;
+	"uri": "https://www.discogs.com/Rick-Astley-Never-Gonna-Give-You-Up/release/249504",&#13;
+	"videos": [{&#13;
+		"description": "Rick Astley - Never Gonna Give You Up (Extended Version)",&#13;
+		"duration": 330,&#13;
+		"embed": true,&#13;
+		"title": "Rick Astley - Never Gonna Give You Up (Extended Version)",&#13;
+		"uri": "https://www.youtube.com/watch?v=te2jJncBVG4"&#13;
+	}],&#13;
+	"year": 1987&#13;
+}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_a8efaa421bdad15054bb7596cc4bcb95^id=a8efaa421bdad15054bb7596cc4bcb95"/>
+    <sys_element_mapping action="delete_multiple" query="id=a8efaa421bdad15054bb7596cc4bcb95"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>a8efaa421bdad15054bb7596cc4bcb95</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:11:48</sys_created_on>
+        <sys_id>70efea421bdad15054bb7596cc4bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:11:48</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>a8efaa421bdad15054bb7596cc4bcb95</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:11:48</sys_created_on>
+        <sys_id>bcefea421bdad15054bb7596cc4bcb06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:11:48</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[1d20aa54-5ea4-4b6e-8908-392189030449].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>a8efaa421bdad15054bb7596cc4bcb95</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:11:48</sys_created_on>
+        <sys_id>f4efea421bdad15054bb7596cc4bcb06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:11:48</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=a8efaa421bdad15054bb7596cc4bcb95"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=a8efaa421bdad15054bb7596cc4bcb95^sys_idNOT INe8efaa421bdad15054bb7596cc4bcb9c"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD2cefaa422ddad1507e613b5ab9f5e999,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=3da6dc0f-6d32-4ea6-ba13-c8d98dc4bdde</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Release</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">a8efaa421bdad15054bb7596cc4bcb95</model>
+        <model_id>a8efaa421bdad15054bb7596cc4bcb95</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_a8efaa421bdad15054bb7596cc4bcb95</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:11:48</sys_created_on>
+        <sys_id>e8efaa421bdad15054bb7596cc4bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discogs Spoke">cf01b0b01b1e99106a2855b42a4bcb51</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:11:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a8efaa421bdad15054bb7596cc4bcb95"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_a8efaa421bdad15054bb7596cc4bcb95^sys_idNOT IN6cefea421bdad15054bb7596cc4bcb03"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>Release</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_a8efaa421bdad15054bb7596cc4bcb95</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:11:48</sys_created_on>
+        <sys_id>6cefea421bdad15054bb7596cc4bcb03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discogs Spoke" source="x_snc_discogs_spok">cf01b0b01b1e99106a2855b42a4bcb51</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discogs Spoke">cf01b0b01b1e99106a2855b42a4bcb51</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:11:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=fdbc660a1b9ad15054bb7596cc4bcb1b^sys_idNOT IN8a7da28a1b9ad15054bb7596cc4bcb26,dcefaa421bdad15054bb7596cc4bcb45"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=59c2b6bb-8799-4626-82ae-0935457fe70b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>release_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Release ID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Release">fdbc660a1b9ad15054bb7596cc4bcb1b</model>
+        <model_id>fdbc660a1b9ad15054bb7596cc4bcb1b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:01:15</sys_created_on>
+        <sys_id>8a7da28a1b9ad15054bb7596cc4bcb26</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discogs Spoke">cf01b0b01b1e99106a2855b42a4bcb51</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:01:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8a7da28a1b9ad15054bb7596cc4bcb26"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=c0ccef81-7545-4c13-be8e-11b42d912598</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>curr_abbr</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Currency Abbreviation</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Get Release">fdbc660a1b9ad15054bb7596cc4bcb1b</model>
+        <model_id>fdbc660a1b9ad15054bb7596cc4bcb1b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:11:46</sys_created_on>
+        <sys_id>dcefaa421bdad15054bb7596cc4bcb45</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discogs Spoke">cf01b0b01b1e99106a2855b42a4bcb51</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:11:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dcefaa421bdad15054bb7596cc4bcb45"/>
+    <sys_hub_action_output action="delete_multiple" query="model=fdbc660a1b9ad15054bb7596cc4bcb1b^sys_idNOT IN590032821bdad15054bb7596cc4bcb71,fa3ee28e1b9ad15054bb7596cc4bcb6b,fa3ee28e1b9ad15054bb7596cc4bcb70"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD950032824cdad15077f01d1a2247bb6f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=25ce2df3-926a-4594-8b14-2510dfa5259a,sourceType=step,sourceUiUniqueId=3da6dc0f-6d32-4ea6-ba13-c8d98dc4bdde,uiType=object,uiTypeLabel=Object,uiUniqueId=402c630e-c754-4aa2-9ee2-73f6eae4216b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>release</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Release</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Release">fdbc660a1b9ad15054bb7596cc4bcb1b</model>
+        <model_id>fdbc660a1b9ad15054bb7596cc4bcb1b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:12:24</sys_created_on>
+        <sys_id>590032821bdad15054bb7596cc4bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discogs Spoke">cf01b0b01b1e99106a2855b42a4bcb51</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:12:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=590032821bdad15054bb7596cc4bcb71"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=590032821bdad15054bb7596cc4bcb71"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=ed290506-a881-4bbe-9bab-36915dba780b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Release">fdbc660a1b9ad15054bb7596cc4bcb1b</model>
+        <model_id>fdbc660a1b9ad15054bb7596cc4bcb1b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>fa3ee28e1b9ad15054bb7596cc4bcb6b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discogs Spoke">cf01b0b01b1e99106a2855b42a4bcb51</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:12:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fa3ee28e1b9ad15054bb7596cc4bcb6b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fa3ee28e1b9ad15054bb7596cc4bcb6b"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=6af732e2-1492-4203-a917-ae115091a32b,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Release">fdbc660a1b9ad15054bb7596cc4bcb1b</model>
+        <model_id>fdbc660a1b9ad15054bb7596cc4bcb1b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>fa3ee28e1b9ad15054bb7596cc4bcb70</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Discogs Spoke">cf01b0b01b1e99106a2855b42a4bcb51</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:12:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fa3ee28e1b9ad15054bb7596cc4bcb70"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fa3ee28e1b9ad15054bb7596cc4bcb70"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=fdbc660a1b9ad15054bb7596cc4bcb1b"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=fdbc660a1b9ad15054bb7596cc4bcb1b^sys_idNOT INa67d6a0e1b9ad15054bb7596cc4bcb11"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Get Release">fdbc660a1b9ad15054bb7596cc4bcb1b</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:01:17</sys_created_on>
+        <sys_id>a67d6a0e1b9ad15054bb7596cc4bcb11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:01:17</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=a67d6a0e1b9ad15054bb7596cc4bcb11"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_fdbc660a1b9ad15054bb7596cc4bcb1b^sys_idNOT IN54efaa421bdad15054bb7596cc4bcb5f,567da28a1b9ad15054bb7596cc4bcb2b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>curr_abbr</element>
+        <help/>
+        <hint/>
+        <label>Currency Abbreviation</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:11:47</sys_created_on>
+        <sys_id>54efaa421bdad15054bb7596cc4bcb5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discogs Spoke" source="x_snc_discogs_spok">cf01b0b01b1e99106a2855b42a4bcb51</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discogs Spoke">cf01b0b01b1e99106a2855b42a4bcb51</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:11:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>release_id</element>
+        <help/>
+        <hint/>
+        <label>Release ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:01:16</sys_created_on>
+        <sys_id>567da28a1b9ad15054bb7596cc4bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discogs Spoke" source="x_snc_discogs_spok">cf01b0b01b1e99106a2855b42a4bcb51</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discogs Spoke">cf01b0b01b1e99106a2855b42a4bcb51</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:01:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_fdbc660a1b9ad15054bb7596cc4bcb1b^sys_idNOT IN9800fe421bdad15054bb7596cc4bcb99,1cefaa421bdad15054bb7596cc4bcb48,18efaa421bdad15054bb7596cc4bcb4a,d0efaa421bdad15054bb7596cc4bcb4b,9cefaa421bdad15054bb7596cc4bcb4b,58efaa421bdad15054bb7596cc4bcb4c,14efaa421bdad15054bb7596cc4bcb4d,dcefaa421bdad15054bb7596cc4bcb4d,98efaa421bdad15054bb7596cc4bcb4e,54efaa421bdad15054bb7596cc4bcb4f"/>
+    <sys_choice field="curr_abbr" table="var__m_sys_hub_action_input_fdbc660a1b9ad15054bb7596cc4bcb1b">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>curr_abbr</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-04 06:12:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9800fe421bdad15054bb7596cc4bcb99</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-04 06:12:19</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>curr_abbr</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Label1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-04 06:11:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1cefaa421bdad15054bb7596cc4bcb48</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-04 06:11:46</sys_updated_on>
+            <value>value1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>curr_abbr</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Label2</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-04 06:11:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>18efaa421bdad15054bb7596cc4bcb4a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-04 06:11:46</sys_updated_on>
+            <value>value2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>curr_abbr</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Label3</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-04 06:11:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d0efaa421bdad15054bb7596cc4bcb4b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-04 06:11:46</sys_updated_on>
+            <value>value3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>curr_abbr</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Label4</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-04 06:11:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9cefaa421bdad15054bb7596cc4bcb4b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-04 06:11:46</sys_updated_on>
+            <value>value4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>curr_abbr</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Label5</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-04 06:11:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>58efaa421bdad15054bb7596cc4bcb4c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-04 06:11:46</sys_updated_on>
+            <value>value5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>curr_abbr</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Label6</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-04 06:11:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>14efaa421bdad15054bb7596cc4bcb4d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-04 06:11:46</sys_updated_on>
+            <value>value6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>curr_abbr</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Label7</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-04 06:11:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dcefaa421bdad15054bb7596cc4bcb4d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-04 06:11:46</sys_updated_on>
+            <value>value7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>curr_abbr</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Label8</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-04 06:11:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>98efaa421bdad15054bb7596cc4bcb4e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-04 06:11:47</sys_updated_on>
+            <value>value8</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>curr_abbr</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Label9</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-04 06:11:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>54efaa421bdad15054bb7596cc4bcb4f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-04 06:11:47</sys_updated_on>
+            <value>value9</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_fdbc660a1b9ad15054bb7596cc4bcb1b^sys_idNOT IN723ee28e1b9ad15054bb7596cc4bcb76,7e3ee28e1b9ad15054bb7596cc4bcb6f,dd0032821bdad15054bb7596cc4bcb75"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>723ee28e1b9ad15054bb7596cc4bcb76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discogs Spoke" source="x_snc_discogs_spok">cf01b0b01b1e99106a2855b42a4bcb51</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discogs Spoke">cf01b0b01b1e99106a2855b42a4bcb51</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:04:34</sys_created_on>
+        <sys_id>7e3ee28e1b9ad15054bb7596cc4bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discogs Spoke" source="x_snc_discogs_spok">cf01b0b01b1e99106a2855b42a4bcb51</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discogs Spoke">cf01b0b01b1e99106a2855b42a4bcb51</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:04:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>release</element>
+        <help/>
+        <hint/>
+        <label>Release</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fdbc660a1b9ad15054bb7596cc4bcb1b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 06:12:24</sys_created_on>
+        <sys_id>dd0032821bdad15054bb7596cc4bcb75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Discogs Spoke" source="x_snc_discogs_spok">cf01b0b01b1e99106a2855b42a4bcb51</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Discogs Spoke">cf01b0b01b1e99106a2855b42a4bcb51</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-04 06:12:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_fdbc660a1b9ad15054bb7596cc4bcb1b"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=fdbc660a1b9ad15054bb7596cc4bcb1b"/>
+</record_update>
